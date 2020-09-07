@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="h1Main" style="background-color: darkgrey">ICT-120</h1>
+</body>
+<script>
+    base = prompt("Quel livret veux-tu?");
+    document.write("<h2 id='h2Main' style='background-color: lightgray'>Livret sélectionné : " + base + "</h2>")
+
+    for(i = 1 ; i <= 10 ; i++ ){
+        document.write(i + " x " + base + " = " + i*base + "<br>")
+    }
+
+    color = prompt ("Choisisez un theme parmis ; 1 = Pink theme / 2 = Gray theme : ")
+
+    if(color == 1) {
+        h1Main.style.backgroundColor = "pink"
+        h2Main.style.backgroundColor = "lightpink"
+    }
+    else{
+        h1Main.style.backgroundColor = "darkgray"
+        h2Main.style.backgroundColor = "lightgray"
+    }
+
+</script>
+</html>

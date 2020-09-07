@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    alert("Un nombre sera choisis aléatoirement, vous devez le trouver.")
+
+    number = Math.floor(Math.random()*100)
+    choice = 0
+    essaies = 0
+
+    while(choice != number) {
+        choice = prompt("Choisisez un nombre :")
+        essaies++
+        document.write("<h1> Essaie " + essaies + " : " + choice + "</h1>")
+        if (choice > number) {
+            alert("Trop grand !")
+        } else if (choice < number) {
+            alert("Trop petit !")
+        } else if (choice == number) {
+            alert("Gagné !")
+        }
+    }
+
+    document.write("<h1>Chiffre cible : " + number)
+</script>
+</html>
